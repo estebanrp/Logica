@@ -5,7 +5,7 @@ def adivinador():
     intentos = 0
     adivinado = False
 
-    print("🔢 Estoy pensando en un número del 1 al 100... ¿Podés adivinar cuál es?")
+    print("Estoy pensando en un número del 1 al 100... ¿Podés adivinar cuál es?")
 
     while not adivinado:
         try:
