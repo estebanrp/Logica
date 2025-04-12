@@ -3,6 +3,7 @@
 #include <string.h>
 
 int leer_entero(const char* mensaje, int min, int max) {
+    // inprime "mensaje" y valida la entrada de un entero en el rango "min" - "max" inclusive ambos
     char buffer[100];
     char* endptr;
     int numero;
