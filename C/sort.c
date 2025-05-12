@@ -5,18 +5,20 @@
 
 void burbuja(int arr[])
 {
-    int aux;
-    for (int i = 0; i < MAX; i++)
+    int swapped; // Bandera para detectar intercambios
+    for (int i = 0; i < MAX - 1; i++)
     {
-        for (int j = 0; j < MAX - 1 - i; j++)
+        swapped = 0;
+        for (int j = 0; j < MAX - i - 1; j++)
         {
             if (arr[j] > arr[j + 1])
             {
-                aux = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = aux;
+                swap(&arr[j], &arr[j + 1]);
+                swapped = 1; // Hubo un intercambio
             }
         }
+        if (swapped == 0)
+            break; // Si no hubo intercambios, el arreglo ya está ordenado
     }
 }
 
@@ -53,7 +55,9 @@ void insercion(int arr[])
                 aux = arr[j];
                 arr[j] = arr[j - 1];
                 arr[j - 1] = aux;
-            } else {
+            }
+            else
+            {
                 break;
             }
         }
