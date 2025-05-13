@@ -1,3 +1,4 @@
+// Ejeercicio corte de control
 // 1)muestre por pantalla la cantidad de alumnos que se reciben este año por
 // carrera y la cantidad total de alumnos que se reciben en este año en general
 // 2)actualice el archivo historico carreras.dat con la cantidad de alumnos que
